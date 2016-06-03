@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E36AADD-0948-4938-8D43-5EE7D2CF9AD5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ARMAssembly</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="command_argument.h" />
+    <ClInclude Include="command_jmp.h" />
+    <ClInclude Include="command_pop.h" />
+    <ClInclude Include="command_push.h" />
+    <ClInclude Include="command_shift.h" />
+    <ClInclude Include="invalid_com_dir_exception.h" />
+    <ClInclude Include="prog_section.h" />
+    <ClInclude Include="register_argument.h" />
+    <ClInclude Include="command_call.h" />
+    <ClInclude Include="command_int.h" />
+    <ClInclude Include="command_io.h" />
+    <ClInclude Include="command_ldch.h" />
+    <ClInclude Include="command_ldstr.h" />
+    <ClInclude Include="command_log.h" />
+    <ClInclude Include="command_mov.h" />
+    <ClInclude Include="command_op.h" />
+    <ClInclude Include="Directives.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="global_directive.h" />
+    <ClInclude Include="immediate_argument.h" />
+    <ClInclude Include="InvalidFilePathException.h" />
+    <ClInclude Include="invalid_syntax_exception.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="reallocation_table.h" />
+    <ClInclude Include="reg_imm_ind.h" />
+    <ClInclude Include="reg_ind_argument.h" />
+    <ClInclude Include="section.h" />
+    <ClInclude Include="section_directive.h" />
+    <ClInclude Include="section_table.h" />
+    <ClInclude Include="string_table.h" />
+    <ClInclude Include="symbol.h" />
+    <ClInclude Include="symbol_argument.h" />
+    <ClInclude Include="symbol_table.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="type_directive.h" />
+    <ClInclude Include="typies.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="command_argument.cpp" />
+    <ClCompile Include="command_jmp.cpp" />
+    <ClCompile Include="command_pop.cpp" />
+    <ClCompile Include="command_push.cpp" />
+    <ClCompile Include="command_shift.cpp" />
+    <ClCompile Include="invalid_com_dir_exception.cpp" />
+    <ClCompile Include="prog_section.cpp" />
+    <ClCompile Include="register_argument.cpp" />
+    <ClCompile Include="command_call.cpp" />
+    <ClCompile Include="command_int.cpp" />
+    <ClCompile Include="command_io.cpp" />
+    <ClCompile Include="command_ldch.cpp" />
+    <ClCompile Include="command_ldstr.cpp" />
+    <ClCompile Include="command_log.cpp" />
+    <ClCompile Include="command_mov.cpp" />
+    <ClCompile Include="command_op.cpp" />
+    <ClCompile Include="Directives.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="global_directive.cpp" />
+    <ClCompile Include="immediate_argument.cpp" />
+    <ClCompile Include="InvalidFilePathException.cpp" />
+    <ClCompile Include="invalid_syntax_exception.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="reallocation_table.cpp" />
+    <ClCompile Include="reg_imm_ind.cpp" />
+    <ClCompile Include="reg_ind_argument.cpp" />
+    <ClCompile Include="section.cpp" />
+    <ClCompile Include="section_directive.cpp" />
+    <ClCompile Include="section_table.cpp" />
+    <ClCompile Include="string_table.cpp" />
+    <ClCompile Include="symbol.cpp" />
+    <ClCompile Include="symbol_argument.cpp" />
+    <ClCompile Include="symbol_table.cpp" />
+    <ClCompile Include="type_directive.cpp" />
+    <ClCompile Include="typies.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

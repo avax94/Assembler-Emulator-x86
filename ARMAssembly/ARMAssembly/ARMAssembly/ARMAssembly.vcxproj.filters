@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidFilePathException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_call.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_mov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_ldch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_ldstr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Directives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reallocation_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="section_directive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global_directive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="type_directive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="invalid_syntax_exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="immediate_argument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="register_argument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reg_ind_argument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol_argument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="typies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="invalid_com_dir_exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_argument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_shift.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reg_imm_ind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="section_table.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="section.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prog_section.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_push.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_pop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="command_jmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="symbol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InvalidFilePathException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_op.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_call.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_io.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_mov.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_ldch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_int.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_ldstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Directives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="string_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbol_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reallocation_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="section_directive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global_directive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="type_directive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="invalid_syntax_exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="immediate_argument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="register_argument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reg_ind_argument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbol_argument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="typies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="invalid_com_dir_exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_argument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_shift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reg_imm_ind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="section_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="section.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prog_section.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_push.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_pop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="command_jmp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

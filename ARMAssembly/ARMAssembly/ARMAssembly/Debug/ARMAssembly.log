@@ -1,0 +1,53 @@
+﻿Build started 6/3/2016 02:52:56 AM.
+     1>Project "E:\Projects\ARMAssembly\ARMAssembly\ARMAssembly\ARMAssembly.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt symbol_table.cpp
+         symbol_table.cpp
+     1>e:\projects\armassembly\armassembly\armassembly\symbol_table.cpp(110): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\projects\armassembly\armassembly\armassembly\symbol_table.cpp(133): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\projects\armassembly\armassembly\armassembly\symbol_table.cpp(164): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\projects\armassembly\armassembly\armassembly\symbol_table.cpp(173): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\ARMAssembly\ARMAssembly\Debug\ARMAssembly.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Projects\ARMAssembly\ARMAssembly\Debug\ARMAssembly.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Projects\ARMAssembly\ARMAssembly\Debug\ARMAssembly.lib" /MACHINE:X86 Debug\Command.obj
+         Debug\command_argument.obj
+         Debug\command_jmp.obj
+         Debug\command_pop.obj
+         Debug\command_push.obj
+         Debug\command_shift.obj
+         Debug\invalid_com_dir_exception.obj
+         Debug\prog_section.obj
+         Debug\register_argument.obj
+         Debug\command_call.obj
+         Debug\command_int.obj
+         Debug\command_io.obj
+         Debug\command_ldch.obj
+         Debug\command_ldstr.obj
+         Debug\command_log.obj
+         Debug\command_mov.obj
+         Debug\command_op.obj
+         Debug\Directives.obj
+         Debug\File.obj
+         Debug\global_directive.obj
+         Debug\immediate_argument.obj
+         Debug\InvalidFilePathException.obj
+         Debug\invalid_syntax_exception.obj
+         Debug\Label.obj
+         Debug\Parser.obj
+         Debug\reallocation_table.obj
+         Debug\reg_imm_ind.obj
+         Debug\reg_ind_argument.obj
+         Debug\section.obj
+         Debug\section_directive.obj
+         Debug\section_table.obj
+         Debug\string_table.obj
+         Debug\symbol.obj
+         Debug\symbol_argument.obj
+         Debug\symbol_table.obj
+         Debug\type_directive.obj
+         Debug\typies.obj
+         ARMAssembly.vcxproj -> E:\Projects\ARMAssembly\ARMAssembly\Debug\ARMAssembly.exe
+     1>Done Building Project "E:\Projects\ARMAssembly\ARMAssembly\ARMAssembly\ARMAssembly.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.73
